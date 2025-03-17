@@ -10,7 +10,7 @@
 </head>
 <style>
     body{
-         background-color:peachpuff;
+        background-color:peachpuff;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -21,39 +21,62 @@
         border-radius: 20px;
         color:white;
         font-size: 20px;
-        padding:60px;
+        padding:40px;
 } 
 .Ndole1, .Achu1,.Kwacoco{
-    display:grid;
-   grid-template-columns: repeat(2,1fr);
+    display:flex;
+    flex-wrap:wrap;
+    gap: 80px;
+    padding: 10px;
+}
+.Kwacoco{
+    gap:150px;
 }
 .Ndole-box img{
-    width:100%;
-    max-width:400px
+    width: 100%;
+}
+.Top{
+    min-width: 300px;
+    max-width: 500px;
+    min-height:200px;
+    max-height:500px;
 }
 .Achu-box img{
     width:100%;
-    max-width:400px
+}
+.Top1{
+    min-width: 300px;
+    max-width: 500px;
+    min-height:200px;
+    max-height:500px;
 }
 .Bible-box img{
-    width:100%;
-    max-width:400px
+ width:100%;   
+}
+.Top2{
+    min-width: 300px;
+    max-width: 600px;
+    min-height:200px;
+    max-height:490px;
 }
 .Bottom2{
 width:100%;
 height: 100px;
-
-
 }
 .Bottom{
     display: grid;
     grid-template-columns:repeat(7,1fr);
     gap:10px;
 }
-@media(max-width:200px) {
-    .Bottom{
-    grid-template-columns:repeat(3,1fr);
-    }
+.Extra{
+width:100%;
+height: 100px;
+
+}
+.soil{
+    display: grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:10px;
 }
 </style>
 <body>
