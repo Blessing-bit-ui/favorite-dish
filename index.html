@@ -10,6 +10,7 @@
 </head>
 <style>
     body{
+        
         background-color:peachpuff;
         background-repeat: no-repeat;
         background-size: cover;
@@ -22,6 +23,7 @@
         color:white;
         font-size: 20px;
         padding:40px;
+        text-align: justify;
 } 
 .Ndole1, .Achu1,.Kwacoco{
     display:flex;
@@ -40,6 +42,7 @@
     max-width: 500px;
     min-height:200px;
     max-height:500px;
+    border-radius: 10px;
 }
 .Achu-box img{
     width:100%;
@@ -49,6 +52,7 @@
     max-width: 500px;
     min-height:200px;
     max-height:500px;
+    border-radius:10px;
 }
 .Bible-box img{
  width:100%;   
@@ -58,10 +62,16 @@
     max-width: 600px;
     min-height:200px;
     max-height:490px;
+    border-radius:10px;
 }
 .Bottom2{
 width:100%;
 height: 100px;
+border-radius:10px;
+transition: transform 0.1s ease-in-out;
+}
+.Bottom2:hover{
+    transform:scale(1.5);
 }
 .Bottom{
     display: grid;
@@ -71,13 +81,52 @@ height: 100px;
 .Extra{
 width:100%;
 height: 100px;
-
 }
 .soil{
     display: grid;
     grid-template-columns:repeat(7,1fr);
     gap:10px;
 }
+ul{
+    list-style: none;
+}
+.link{
+    display: flex;
+    justify-content: flex-end;
+    gap:10px;
+}
+h1{
+    font-family: playfair display;
+    font-size: 40px;
+    color:peachpuff;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 15px;
+}
+h2{
+    font-family:playfair display;
+    color:peachpuff;
+    text-align:center;
+}
+h3{
+    color:peachpuff;
+    font-family:playfair display;
+}
+
+.Foodd{
+    color:peachpuff;
+}
+.Food{
+    color:peachpuff;
+    font-weight:bolder;
+    text-decoration: underline;
+}
+.Click{
+    text-align: center;
+}
+
+
 </style>
 <body>
     <div class="container">
@@ -175,7 +224,6 @@ Add the palm oil and the spinach then </br>mix well so all the ingredients are w
 <img class="Bottom2" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/235/original/kengs_kitchen_cameroon_recipe_ekwang_final2.jpg?1740000429 "/>
 <img class="Bottom2"src=" https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/236/original/download.jpeg?1740000464"/>
 </div>
-<div class="Dishes">
 <h3>
     About Cameroon Dishes
 </h3>
@@ -186,7 +234,6 @@ Repeated European colonisation, which began with the Portuguese in the 15th cent
 
 Despite this, most people tend to eat more traditional African food. A typical meal will comprise a filling, starchy vegetable with a spicy sauce and, if possible, some form of meat – usually fish but sometimes goat, beef, chicken or bush meat – even insects, depending where you are. Fufu, for example, is a dish common in much of Africa and bits of the Caribbean too. A boiled, starchy vegetable is pounded with pestle and mortar into a doughy mass, then rolledd into little balls and dipped into sauce or soup – it’s much more moreish than it sounds.<a href="http://www.foodbycountry.com/Algeria-to-France/Cameroon.html#:~:text=2%20HISTORY%20AND%20FOOD,prepare%20their%20own%20traditional%20foods.&text=Fried%20prunes%20are%20simmered%20in,a%20filling%20casual%20family%20dinner.&text=the%20capital%20city%2C%20Yaounde%2C%20also,traditional%20favorites%20than%20foreign%20dishes.">Read More</a>
 </footer>
-</div>
 </br>
 <div class="soil">
 <img class="Extra"src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/306/original/cocoyam.jpg?1740076734"/>
@@ -199,7 +246,7 @@ Despite this, most people tend to eat more traditional African food. A typical m
 </div>
 </div>
 </p>
-<div class="ClickMe">
+<div class="Click">
 <button id="myButton">
     Click Me
 </button>
@@ -212,13 +259,13 @@ Despite this, most people tend to eat more traditional African food. A typical m
     let day=days[currentDate.getDay()];
     let hour=currentDate.getHours();
     let minutes=currentDate.getMinutes();
-    //alert(`👋 Welcome to Cameroon cuisine. Today is ${day} at ${hour}:${minutes}.If you enjoy this page please give it a like 😁.Thank You`);
+    alert(`👋 Welcome to Cameroon cuisine. Today is ${day} at ${hour}:${minutes}.If you enjoy this page please give it a like 😁.Thank You`);
    
     function myCuisine(){
         let name=prompt("What is your name");
         let cuisine=prompt(`Hi ${name}. Have you eaten from Cameroon cuisine before? Yes/No`);
         if(cuisine.toLowerCase() == "yes"){
-      //  alert("I hope you Liked it😋 and if you didnt please dont be discourage😞 and try it another time🙂.")
+       alert("I hope you Liked it😋 and if you didnt please dont be discourage😞 and try it another time🙂.")
         }
          if (cuisine.toLowerCase()=="no"){
             alert("Please try it whenever possible, you don't know what you are missing!")
